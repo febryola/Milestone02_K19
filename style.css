@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* variables CSS */
+:root {
+    --body-font: 'Raleway', sans-serif;
+    --text-color: #000;
+    --button-color:#39A2DB;
+    
+    --font-medium:400;
+    --font-semi-bold:500;
+
+}
+
+body {
+    font-family: var(--body-font);
+}
+
 nav {
     background-color: rgb(255, 255, 255);
     display: flex;
