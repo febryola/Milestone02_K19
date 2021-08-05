@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register New Account | Kawanjasa</title>
+        <!-- masukin link css disini -->
+    </head>
+    <body>
+        <div class="register-business-container">
+            <h2>Register for Service Provider</h2>
+            <p>Fill the blanks below with the proper credentials</p>
+            <form id="register-business">
+                <label for="new_business_b">Enter company name :</label> <br>
+                <input id="new_business_b" type="text" placeholder="Company Name" value=""> <br><br>
+                <label for="new_name_b">Enter owner's name :</label> <br>
+                <input id="new_name_b" type="text" placeholder="Owner's Name" value=""> <br><br>
+                <label for="new_email_b">Enter owner's email :</label> <br>
+                <input id="new_email_b" type="email" placeholder="Your email" value=""> <br><br>
+                <label for="new_pass_b">Enter your desired password :</label> <br>
+                <input id="new_pass_b" type="password" placeholder="Password" value=""> <br><br>
+                <label for="new_type_b">Pick your offered services type:</label>
+                <select id="new_type_b" name="Type of Service">
+                    <option value="install_service">Instalasi dan Reparasi</option>
+                    <option value="cleaning_service">Cleaning Service</option>
+                    <option value="laundry_service">Laundry</option>
+                    <option value="design_service">Design dan Fotografi</option>
+                </select> <br><br>
+                <input id="register_button_b" type="submit" value="Register Now!" onclick="storeBusinessLogin()"> 
+            </form>
+        </div>
+        <div class="register-user-container">
+            <h2>Register for Service User</h2>
+            <p>Fill the blanks below with the proper credentials</p>
+            <form id="register-user">
+                <label for="new_name_u">Enter your name :</label> <br>
+                <input id="new_name_u" type="text" placeholder="Full Name" value=""> <br><br>
+                <label for="new_email_u">Enter your email :</label> <br>
+                <input id="new_email_u" type="email" placeholder="Your email" value=""> <br><br>
+                <label for="new_pass_u">Enter your desired password :</label> <br>
+                <input id="new_pass_u" type="password" placeholder="Password" value=""> <br><br>
+                <input id="register_button_u" type="submit" value="Register Now!" onclick="storeUserLogin()"> 
+            </form>
+        </div>
+        <div class="login-business-container">
+            <h2>Login As Service Owner</h2>
+            <form id="login-business">
+                <label for="check_email_b">Enter your email :</label> <br>
+                <input id="check_email_b" type="email" placeholder="Your email" value=""> <br><br>
+                <label for="check_pass_b">Enter your password :</label> <br>
+                <input id="check_pass_b" type="password" placeholder="Password" value=""> <br><br>
+                <input id="login_button_b" type="submit" value="Login Now!" onclick="checkBusinessLogin()"> 
+            </form>
+        </div>
+        <div class="login-user-container">
+            <h2>Login As Service User</h2>
+            <form id="login-user">
+                <label for="check_email_u">Enter your email :</label> <br>
+                <input id="check_email_u" type="email" placeholder="Your email" value=""> <br><br>
+                <label for="check_pass_u">Enter your password :</label> <br>
+                <input id="check_pass_u" type="password" placeholder="Password" value=""> <br><br>
+                <input id="login_button_u" type="submit" value="Login Now!" onclick="checkUserLogin()"> 
+            </form>
+        </div>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
