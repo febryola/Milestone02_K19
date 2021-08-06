@@ -115,9 +115,9 @@ function storeUserLogin() {
 function checkBusinessLogin() {
   var check_email = document.getElementById("check_email_b");
   var check_pass = document.getElementById("check_pass_b");
-  var position = 0;
+  var position = -1;
   for (var i = 0; i < credentials_toko.length; i++) {
-    if (credentials_toko[i]["email_pemilik"] == check_email) {
+    if (credentials_toko[i]["email_pemilik"] == check_email.value) {
       position = i;
       break;
     }
