@@ -12,46 +12,21 @@ const credentials_user = (() => {
     :   JSON.parse(fieldValue)
 })()
 
-function objToArr(arrOfObj) {
-    var keyArr = [];
-    var result = [];
-
-    for (var key in arrOfObj[0]) {
-        keyArr.push(key);
-    }
-
-    for (var i = 0; i < arrOfObj.length; i++) {
-        var obj = arrOfObj[i];
-        var valArr = [];
-
-        for (var j = 0; j < keyArr.length; j++) {
-            valArr.push(obj[keyArr[j]]);
-        }
-
-        result.push(valArr);
-    }
-    return result;
-}
-
-var database_toko = []
-var database_user = []
+var current_user        = ""
+var current_business    = ""
 
 function onStart() {
-    alert("start");
     if ((credentials_toko[0] == null) || (credentials_user[0] == null)) {    
-        alert("test")
         credentials_toko.push({"nama_toko":"Kawanjasa","nama_pemilik":"Yola","email_pemilik":"mencintaiSPARTA@gmail.com","pass_toko":"bersamaKawanjasa","type_toko":"install_service"});
         credentials_user.push({"nama_user":"Gilang","email_user":"bersamamu.gilang@gmail.com","pass_user":"sukaYola"});
         localStorage.setItem("data_toko", JSON.stringify(credentials_toko));
         localStorage.setItem("data_user", JSON.stringify(credentials_user));
-    } else {
-        alert("end");
-        database_toko.push(objToArr(credentials_toko));
-        database_user.push(objToArr(credentials_user));
-        alert(database_user)
-        alert(database_toko[3])
-        alert(database_toko)
+        localStorage.setItem("user", JSON.stringify(current_user));
+        localStorage.setItem("business", JSON.stringify(current_business));
+
+        alert("Initial Data Loaded Successfully")
     }
+    alert("Page Loaded Successfully");
 }
 
 function storeBusinessLogin() {
@@ -62,7 +37,7 @@ function storeBusinessLogin() {
     var update_type = document.getElementById("new_type_b");
     var availability = false;
     for (var i = 0; i < credentials_toko.length; i++) {
-        if (credentials_toko[i][0] == update_business) {
+        if (credentials_toko[i]["nama_toko"] == update_business.value) {
             availability = true;
             break
         }
@@ -85,7 +60,7 @@ function storeUserLogin() {
     var update_pass = document.getElementById("new_pass_u");
     var availability = false;
     for (var i = 0; i < credentials_user.length; i++) {
-        if ((credentials_user[i][0] == update_name) || credentials_user[i][1] == update_email) {
+        if ((credentials_user[i]["nama_user"] == update_name.value) || credentials_user[i][1] == update_email) {
             availability = true;
             break
         }
@@ -107,37 +82,38 @@ function checkBusinessLogin() {
     var check_pass = document.getElementById("check_pass_b");
     var position = 0;
     for (var i = 0; i < credentials_toko.length; i++) {
-        if (credentials_toko[i][2] == check_email) {
+        if (credentials_toko[i]["email_pemilik"] == check_email) {
             position = i;
             break
         }
     }
-    
     if (position < 0) {
         alert("Data anda belum terdaftar atau credentials anda salah!")
-    } else if ((position >= 0) && (credentials_toko[position][3] == check_pass)) {
-        alert("Anda berhasil login. Selamat datang " + credentials_toko[position][1])
+    } else if (credentials_toko[position]["pass_toko"] == check_pass.value) {
+        alert("Anda berhasil login. Selamat datang " + credentials_toko[position]["nama_pemilik"])
+        current_business = credentials_toko[position]["nama_pemilik"];
+        localStorage.setItem("business", current_business)
     } else {
         alert("Credentials anda salah!")
     }
 }
 
 function checkUserLogin() {
-    var data_user = localStorage.getItem("data_user")
     var check_email = document.getElementById("check_email_u");
     var check_pass = document.getElementById("check_pass_u");
     var position = -1;
     for (var i = 0; i < credentials_user.length; i++) {
-        if (credentials_user[i][0] == check_email) {
+        if (credentials_user[i]["email_user"] == check_email.value) {
             position = i;
             break
         }
     }
-    
     if (position < 0) {
         alert("Data anda belum terdaftar atau credentials anda salah!")
-    } else if ((position >= 0) && (credentials_user[position][2] == check_pass)) {
-        alert("Anda berhasil login. Selamat datang " + credentials_user[position][1])
+    } else if (credentials_user[position]["pass_user"] == check_pass.value) {
+        alert("Anda berhasil login. Selamat datang " + credentials_user[position]["nama_user"]);
+        current_user = credentials_user[position]["nama_user"];
+        localStorage.setItem("user", current_user)
     } else {
         alert("Credentials anda salah!")
     }
