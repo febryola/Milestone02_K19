@@ -95,11 +95,17 @@ form.search {
     border-radius: 10px 10px 0 0;
 }
 
-.services-info h3 {
+.card-circle h3 {
     margin-left: 14px;
 }
 
-.services-info button {
+
+.card-circle:hover {
+    cursor: grab;
+    box-shadow:0px 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card-circle button {
     width: 90%;
     border: none;
     background-color: #3BA2DA;
@@ -110,7 +116,7 @@ form.search {
     margin: 20px 18px 0 18px;
 }
 
-.services-info hr {
+.card-circle hr {
     height:1px;
     border-width:0;
     color:#3BA2DA;
