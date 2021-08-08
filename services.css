@@ -37,7 +37,9 @@ form {
     box-sizing: border-box;
 }
 
+
 /* search field */
+
 form.search input[type=text] {
     padding: 8px;
     font-size: 17px;
@@ -48,7 +50,9 @@ form.search input[type=text] {
     border-radius: 8px 0 0 8px;
 }
 
+
 /* submit button */
+
 form.search button {
     float: left;
     width: 5%;
@@ -66,7 +70,9 @@ form.search button:hover {
     background: #0b7dda;
 }
 
+
 /* clear floats ??? */
+
 form.example::after {
     content: "";
     clear: both;
@@ -99,10 +105,10 @@ form.search {
     margin-left: 14px;
 }
 
-
 .card-circle:hover {
     cursor: grab;
-    box-shadow:0px 0px 3px 5px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    height: 220px;
 }
 
 .card-circle button {
@@ -117,11 +123,53 @@ form.search {
 }
 
 .card-circle hr {
-    height:1px;
-    border-width:0;
-    color:#3BA2DA;
-    background-color:#3BA2DA; 
-    width:90%; 
-    margin-top: 58px; 
+    height: 1px;
+    border-width: 0;
+    color: #3BA2DA;
+    background-color: #3BA2DA;
+    width: 90%;
+    margin-top: 58px;
     margin-bottom: -6px;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 316px;
+    height: 216px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: #3BA2DA;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px 10px 0 0;
 }
