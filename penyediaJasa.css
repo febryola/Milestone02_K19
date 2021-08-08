@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* variables CSS */
+:root {
+    --body-font: 'Raleway', sans-serif;
+    --text-color: #000;
+    --button-color:#39A2DB;
+    
+    --font-medium:400;
+    --font-semi-bold:500;
+
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* border-bottom: 3px solid grey; */
+    /* -webkit-box-shadow:0px 0px 4px 0px grey; */
+    /* -moz-box-shadow:0px 0px 4px 0px grey; */
+    box-shadow: 0px 2px 6px grey;
+    margin: -8px;
+    padding: 4px 0 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* background-color: red; */
+}
+
+.search-btn {
+    width: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* search field */
+form.search input[type=text] {
+    padding: 8px;
+    font-size: 17px;
+    border: 1px solid #2196F3;
+    float: left;
+    width: 85%;
+    background: white;
+    border-radius: 8px 0 0 8px;
+}
+
+/* submit button */
+form.search button {
+    float: left;
+    width: 5%;
+    padding: 8px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+/* clear floats ??? */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form.search {
+    width: 60%;
+}
+
+.info {
+    display: flex;
+}
+
+.info-toko h2,
+.info-toko h3 {
+    color: white;
+}
+
+button {
+    background-color: #3BA2DA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--body-font);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn-2 {
+    background-color: #053742;
+    margin: 0 0 0 0.5em;
+}
