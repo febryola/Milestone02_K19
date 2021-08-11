@@ -132,6 +132,27 @@ form.search {
     border: 1.8px solid #72c0eb; 
     border-radius: 0.5em; 
     padding: 0.8em;
+    display: flex;
+}
+
+.gambar-jasa {
+    height: 120px;
+    width: 150px;
+    margin-top: 3px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5em;
+}
+
+.gambar-jasa img {
+    max-height: 120px;
+    position: absolute;
+    left: -30px;
+}
+
+.review-pesanan {
+    text-align: justify;
+    margin-left: 9px;
 }
 
 .mengabari {
