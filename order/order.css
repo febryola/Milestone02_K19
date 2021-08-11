@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 nav {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -11,17 +17,19 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-icon {
     display: flex;
     align-items: center;
 }
-
-.tipe-jasa {
-    display: flex;
-    text-align: center;
+form.search input[type=text] {
+    padding: 8px;
+    font-size: 17px;
+    border: 1px solid #2196F3;
+    float: left;
+    width: 85%;
+    background: white;
+    border-radius: 8px 0 0 8px;
 }
-
 form {
     margin: 0;
     padding: 0;
@@ -37,20 +45,6 @@ form {
     box-sizing: border-box;
 }
 
-
-/* search field */
-
-form.search input[type=text] {
-    padding: 8px;
-    font-size: 17px;
-    border: 1px solid #2196F3;
-    float: left;
-    width: 85%;
-    background: white;
-    border-radius: 8px 0 0 8px;
-}
-
-
 /* submit button */
 
 form.search button {
@@ -65,54 +59,147 @@ form.search button {
     cursor: pointer;
     border-radius: 0 8px 8px 0;
 }
-
 form.search button:hover {
     background: #0b7dda;
 }
-
-
-/* clear floats ??? */
-
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 form.search {
     width: 60%;
 }
 
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+/* --------------------- chevron left + service title ------------------ */
 
-form.search {
-    width: 60%;
-}
-
-.info {
+header .header{
     display: flex;
+    margin-top: 9px;
+}
+header div a{
+    margin-top: 17px;
+}
+.header{
+    margin-left: 8%;
+    width: 83%;
+}
+header div h2{
+    margin-left: 1%;
 }
 
-.info-toko h2,
-.info-toko h3 {
-    color: white;
-}
+/* -------------------- box content --------------------- */
 
-button {
-    background-color: #3BA2DA;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 20px;
-    font-family: var(--body-font);
-    font-weight: bold;
+/* box 1 */
+.main{
+    margin-top: 10px;
+    justify-content: center;
+
+}
+.main .box-1{
+    border: 1px solid #4798CE;
+    background: #EBF1FB;
+    width: 562px;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
     border-radius: 10px;
-    cursor: pointer;
-    transform: scale(1.02);
-    transition: 0.6s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
 }
+.main .box-1 p{
+    text-align: justify;
+}
+/* box 2 */
+.main .box-2{
+    border: 1px solid #4798CE;
+    width: 562px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
+}
+.main .box-2 .baris{
+    display: flex;
+    justify-content: space-evenly;
+}
+.durasi{
+    border: 1px solid #3BA2DA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 140px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+.main .box-2 h3{
+    margin-left: 33px;
+}
+
+/* box-3 */
+.main .box-3{
+    border: 1px solid #4798CE;
+    width: 562px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
+}
+.main .box-3 h3{
+    margin-left: 33px;
+}
+.forms{
+    margin-left: 33px;
+    font-size: 16px;
+    margin-bottom: 19px;
+}
+label{
+    font-size: 1.125rem;
+}
+input{
+    border: 1px solid #3BA2DA;
+    border-radius: 6px;
+    padding: 3px;
+}
+#form1{
+    margin-left: 34px;
+}
+#form2{
+    margin-left: 48px;
+}
+
+/* box-4 */
+.main .box-4{
+    border: 1px solid #4798CE;
+    width: 562px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
+}
+.main .box-4 h3{
+    margin-left: 33px;
+}
+#form3{
+    width: 87%;
+    margin-bottom: 19px;
+    margin-left: 33px;
+    padding: 6px;
+}
+
+/* Button Pesan */
+.btn{
+    display: flex;
+    width: 562px;
+    margin: auto;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.pesan{
+    background-color: #3BA2DA;
+    color: #FFFFFF;
+    width: 120px;
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+
