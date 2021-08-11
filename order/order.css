@@ -5,66 +5,99 @@ body{
 }
 
 nav {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
     background-color: rgb(255, 255, 255);
     display: flex;
-    /* border-bottom: 3px solid grey; */
-    /* -webkit-box-shadow:0px 0px 4px 0px grey; */
-    /* -moz-box-shadow:0px 0px 4px 0px grey; */
     box-shadow: 0px 2px 6px grey;
     margin: -8px;
     padding: 4px 0 4px 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav-icon {
-    display: flex;
-    align-items: center;
-}
-form.search input[type=text] {
-    padding: 8px;
-    font-size: 17px;
-    border: 1px solid #2196F3;
-    float: left;
-    width: 85%;
-    background: white;
-    border-radius: 8px 0 0 8px;
-}
-form {
-    margin: 0;
+    z-index: 10;
+  }
+  
+  .merk {
+    width: 22vw;
+  }
+  
+  .logo {
+    margin-left: 4vw;
+    width: 15vw;
+  }
+  
+  .name {
+    width: 12vw;
+  }
+  
+  form {
+    margin: 0 0 0 4vw;
     padding: 0;
     border: none;
-    /* background-color: red; */
-}
-
-.search-btn {
-    width: 20px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* submit button */
-
-form.search button {
-    float: left;
-    width: 5%;
+  }
+  
+  /* search field */
+  form.search input[type="text"] {
     padding: 8px;
-    background: #2196F3;
+    font-size: 17px;
+    border: 1px solid #2196f3;
+    float: left;
+    width: 50vw;
+    background: white;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* submit button */
+  form.search button {
+    float: left;
+    width: 40px;
+    padding: 8px;
+    background: #2196f3;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
     border-radius: 0 8px 8px 0;
-}
-form.search button:hover {
+  }
+  
+  form.search button:hover {
     background: #0b7dda;
-}
-form.search {
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  form.search {
     width: 60%;
-}
+  }
+  
+  .search-btn {
+    width: 20px;
+  }
+  
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .notif {
+    width: 3vw;
+  }
+  
+  .user {
+    width: 3vw;
+  }
+  
+  nav div p {
+    margin: 0 5vw 0 1vw;
+    font-size: 2.5vh;
+  }
 
 /* --------------------- chevron left + service title ------------------ */
 
@@ -72,7 +105,8 @@ header .header{
     display: flex;
     margin-top: 9px;
 }
-header div a{
+header div a{ 
+    color : black;
     margin-top: 19px;
 }
 .header{
