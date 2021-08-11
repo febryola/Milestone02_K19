@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+/* variables CSS */
+:root {
+  --body-font: "Raleway", sans-serif;
+  --text-color: #000;
+  --button-color: #39a2db;
+
+  --font-medium: 400;
+  --font-semi-bold: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+/* NAVIGASI */
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  box-shadow: 0px 2px 6px grey;
+  margin: -8px;
+  padding: 4px 0 4px 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.merk {
+  width: 22vw;
+}
+
+.logo {
+  margin-left: 4vw;
+  width: 4vw;
+}
+
+.name {
+  width: 12vw;
+}
+
+form {
+  margin: 0 0 0 4vw;
+  padding: 0;
+  border: none;
+}
+
+/* search field */
+form.search input[type="text"] {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid #2196f3;
+  float: left;
+  width: 50vw;
+  background: white;
+  border-radius: 8px 0 0 8px;
+}
+
+/* submit button */
+form.search button {
+  float: left;
+  width: 40px;
+  padding: 8px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.search {
+  width: 60%;
+}
+
+.search-btn {
+  width: 20px;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notif {
+  width: 4vw;
+}
+
+.user {
+  width: 4vw;
+}
+
+nav div p {
+  margin: 0 5vw 0 1vw;
+  font-size: 2.5vh;
+}
+
+/* BANNER BESAR */
+
+.big-banner {
+  display: flex;
+  align-items: center;
+  margin-top: 8vh;
+  z-index: 9;
+}
+
+.banner-img {
+  margin: auto;
+  border-radius: 17px;
+  margin-top: 1em;
+  width: 80vw;
+}
+
+.left-slider {
+  position: relative;
+  left: 12vw;
+  width: 3.5vw;
+  border-radius: 50%;
+}
+
+.right-slider {
+  position: relative;
+  right: 12vw;
+  width: 3.5vw;
+  border-radius: 50%;
+}
+
+/* IKON JASA */
+
+.tipe-jasa {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 1em;
+}
+
+.jasa-landing-img {
+  height: 12vw;
+}
+
+/* COMMENTS */
+
+h2 {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+
+.customers-review {
+  display: flex;
+  position: center;
+  justify-content: space-evenly;
+}
+
+.customers-review-1 {
+  display: flex;
+  box-shadow: 2px 2px 5px rgb(201, 195, 195);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.usr-img {
+  height: 60px;
+  margin-top: 15px;
+}
+
+.rating {
+  width: 120px;
+  margin: -12px 0 0px -6px;
+}
+
+.user-review {
+  margin-left: 15px;
+  width: 30vw;
+}
+
+.comments {
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 60px;
+  }
+  .name {
+    display: none;
+  }
+  .logo {
+    width: 60px;
+    margin-left: 1vw;
+  }
+  .merk {
+    width: 8vw;
+    margin: 0;
+  }
+  nav div p {
+    display: none;
+  }
+  .notif {
+    width: 40px;
+  }
+  .user {
+    width: 40px;
+    margin-right: 4vw;
+  }
+  .customers-review {
+    display: inline;
+  }
+  .customers-review-1 {
+    box-shadow: 2px 2px 5px rgb(201, 195, 195);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .usr-img {
+    height: 7vw;
+    margin-top: 15px;
+  }
+  .rating {
+    width: 120px;
+    margin: -12px 0 0px -6px;
+  }
+  .user-review {
+    margin-left: 15px;
+    width: 80vw;
+  }
+  .comments {
+    text-align: justify;
+  }
+  div.tipe-jasa p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .banner-img {
+    display: none;
+  }
+  .right-slider {
+    display: none;
+  }
+  .left-slider {
+    display: none;
+  }
+  .tipe-jasa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c d";
+    margin: 1vw 2vw 0 2vw;
+  }
+  .jasa-landing-img {
+    height: 20vh;
+  }
+  div.job-0 img {
+    grid-area: a;
+    margin-left: 5vw;
+  }
+  div.job-1 img {
+    grid-area: b;
+    margin-right: 5vw;
+  }
+  div.job-2 img {
+    grid-area: c;
+    margin-left: 5vw;
+  }
+  div.job-3 img {
+    grid-area: d;
+    margin-right: 5vw;
+  }
+  .logo {
+    margin-left: 1vw;
+  }
+  .user {
+    margin-right: 1vw;
+  }
+  form.search input[type="text"] {
+    width: 40vw;
+    margin-left: 7vw;
+  }
+}
