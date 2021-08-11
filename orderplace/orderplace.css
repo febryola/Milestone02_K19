@@ -104,3 +104,45 @@ form.search {
 .services-img {
     border-radius: 10px 10px 10px 10px;
 }
+
+/* MAIN */
+.ceklis {
+    margin-top:4em; 
+    align-items: center; 
+    justify-content: center; 
+    display: flex
+}
+
+.ditempatkan {
+    margin-top:-1.4em; 
+    align-items: center; 
+    justify-content: center;
+    display: flex
+}
+
+.kotak-pesanan {
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
+
+.bentuk-kotak {
+    height:150px;
+    width:400px; 
+    border: 1.8px solid #72c0eb; 
+    border-radius: 0.5em; 
+    padding: 0.8em;
+}
+
+.mengabari {
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
+
+.diterima {
+    margin-top:-2.3em;
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
