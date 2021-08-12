@@ -59,7 +59,7 @@ form.search input[type="text"] {
   font-size: 17px;
   border: 1px solid #2196f3;
   float: left;
-  width: 50vw;
+  width: 48vw;
   background: white;
   border-radius: 8px 0 0 8px;
 }
@@ -273,6 +273,7 @@ h2 {
   }
   .jasa-landing-img {
     height: 20vh;
+    max-height: 45vw;
   }
   div.job-0 img {
     grid-area: a;
