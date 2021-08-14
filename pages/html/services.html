@@ -5,36 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="services.css">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav>
-        <img style="margin-left: 6vw; height: 52px;" src="../images/logo-icon-kawanjasa.png" alt="logo-kawanjasa">
+        <div class="merk">
+            <a href="#"><img class="logo" src="../../images/logo.png" alt="Logo"><img class="name" src="../../images/name.png" alt="Name"></a>
+        </div>
         <form class="search" action="">
-            <input type="text" id="search" value="Service AC">
+            <input type="text" id="search" placeholder="Service">
             <button type="submit"><i class="fa fa-search"></i></button>
-            <!-- <input class="search-btn" type="image" src="images/search-btn.png"> -->
         </form>
         <div class="nav-icon">
-            <img style="margin-right: 5px" src="../images/notif.png" alt="notifikasi">
-            <img style="margin-right: 10px" src="../images/userProfile.png" alt="user-profile">
-            <p style="margin-right: 120px;">Gilang</p>
+            <a href="#"><img class="notif" src="../../images/notif.png" alt="notifikasi"></a>
+            <a href="#"><img class="user" src="../../images/userProfile.png" alt="user-profile"></a>
+            <p>Gilang</p>
         </div>
-
     </nav><br>
-    <div page-title style="display: flex; align-items: center; margin-left: 10vw;">
-        <a href="../index.html"><img src="../images/row.png" style="height: 20px; margin-right: 6px;"></a>
-        <h2>Cleaning Services</h2>
+
+    <div class="return">
+        <a href="../../index.html"><img src="../../images/row.png" class="return-img"></a>
+        <a href="../../index.html">
+            <h2>Cleaning Services</h2>
+        </a>
     </div>
+
     <div class="services-preview">
         <div class="services-each">
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img class="services-img" src="../images/cleaning-service/preview1.png" width="316" height="216">
+                        <img class="services-img" src="../../images/cleaning-service/preview1.png" width="316" height="216">
                     </div>
                     <div class="flip-box-back">
                         <h2 style="color:white;">Deskripsi</h2>
@@ -54,20 +58,20 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img class="services-img" src="../images/cleaning-service/preview2.png" width="316" height="216">
+                        <img class="services-img" src="../../images/cleaning-service/preview2.png" width="316" height="216">
                     </div>
                     <div class="flip-box-back">
                         <h2>Deskripsi</h2>
-                        <p align="justify" style="margin-left: 15px; margin-right:15px;">Pelayanan untuk membersihkan semua jenis pakaian dan kain kotor yang anda miliki dalam jumlah kilo ataupun satuan. Noda membandel atau sebesar apapun pasti bisa kami bersihkan. Hasilnya dijamin sesuai dengan ekspektasi Anda dan
-                            akan membuat pakaian Anda terlihat baru kembali</p>
+                        <p align="justify" style="margin-left: 15px; margin-right:15px;">Pelayanan untuk membersihkan kaca ataupun jendela di rumah, kantor, cafe, restoran, dan berbagai tempat lainnya. Kaca atau jendela yang sebelumnya kotor dan terlihat berdebu akan kami bersihkan sehingga terlihat seperti tanpa kaca.
+                            Jadi tunggu apalagi, segera lakukan pemesanan</p>
                     </div>
                 </div>
             </div>
             <div class="card-circle">
-                <h3 style="margin-top: 25px;">Laundry Kiloan</h3>
-                <h3>Rp80.0000</h3>
+                <h3 style="margin-top: 25px;">Pembersihan Kaca / Jendela</h3>
+                <h3>Rp65.0000</h3>
                 <hr style="margin-top: 60px;">
-                <a href="order/order2.html"><button type="button">Pesan</button></a>
+                <a href="order.html"><button type="button">Pesan</button></a>
             </div>
 
         </div>
@@ -75,7 +79,7 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img class="services-img" src="../images/cleaning-service/preview3.png" width="316" height="216">
+                        <img class="services-img" src="../../images/cleaning-service/preview3.png" width="316" height="216">
                     </div>
                     <div class="flip-box-back">
                         <h2>Deskripsi</h2>
@@ -87,9 +91,9 @@
             </div>
             <div class="card-circle">
                 <h3 style="margin-top: 25px;">Penyemprotan Desinfektan</h3>
-                <h3>Rp80.0000</h3>
+                <h3>Rp110.0000</h3>
                 <hr style="margin-top: 60px;">
-                <a href="order/order3.html"><button type="button">Pesan</button></a>
+                <a href="order.html"><button type="button">Pesan</button></a>
             </div>
 
         </div>
@@ -97,27 +101,27 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img class="services-img" src="../images/cleaning-service/preview4.png" width="316" height="216">
+                        <img class="services-img" src="../../images/cleaning-service/preview4.png" width="316" height="216">
                     </div>
                     <div class="flip-box-back">
                         <h2>Deskripsi</h2>
                         <p align="justify" style="margin-left: 15px; margin-right:15px;">Pelayanan pembersihan ruangan dengan vacum/hydro cleaner yang dapat dilakukan secara berkala ataupun rutin. Anda tidak perlu menyiapkan alat apapun karena semuanya telah kami siapkan dengan baik. Jadi tidak perlu khawatir tentang
-                            kebersihan, Anda butuh? maka kami datang</p>
+                            kebersihan, Anda butuh? kami datang</p>
                     </div>
                 </div>
             </div>
             <div class="card-circle">
                 <h3 style="margin-top: 25px;">Vakum / Hydro Cleaning</h3>
-                <h3>Rp80.0000</h3>
+                <h3>Rp45.0000</h3>
                 <hr style="margin-top: 60px;">
-                <a href="order/order4.html"><button type="button">Pesan</button></a>
+                <a href="order.html"><button type="button">Pesan</button></a>
             </div>
         </div>
         <div class="services-each">
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img class="services-img" src="../images/cleaning-service/preview5.png" width="316" height="216">
+                        <img class="services-img" src="../../images/cleaning-service/preview5.png" width="316" height="216">
                     </div>
                     <div class="flip-box-back">
                         <h2>Deskripsi</h2>
@@ -128,13 +132,33 @@
             </div>
             <div class="card-circle">
                 <h3 style="margin-top: 25px;">Cuci Motor / Mobil</h3>
-                <h3>Rp80.0000</h3>
+                <h3>Rp95.0000</h3>
                 <hr style="margin-top: 60px;">
-                <a href="order/order5.html"><button type="button">Pesan</button></a>
+                <a href="order.html"><button type="button">Pesan</button></a>
             </div>
 
         </div>
-        <div style="margin-bottom: 5vw;"></div>
+        <div class="services-each">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img class="services-img" src="../../images/cleaning-service/preview6.jpg" width="316" height="216">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Deskripsi</h2>
+                        <p align="justify" style="margin-left: 15px; margin-right:15px;">Pelayanan untuk mengepel lantai rumah Anda yang terasa kasat dan tidak licin sehingga membuat tapakan kaki Anda terganggu. Segera lakukan pemesanan, agar kami dapat mengepel rumah Anda dan membuat lantai Anda bersih, wangi, dan
+                            nyaman.
+                    </div>
+                </div>
+                <div class="card-circle">
+                    <h3 style="margin-top: 25px;">Pengepelan Lantai Rumah</h3>
+                    <h3>Rp75.0000</h3>
+                    <hr style="margin-top: 60px;">
+                    <a href="order.html"><button type="button">Pesan</button></a>
+                </div>
+
+            </div>
+
 </body>
 
 </html>
