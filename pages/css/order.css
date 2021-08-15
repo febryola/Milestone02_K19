@@ -243,3 +243,17 @@ input{
     background: transparent;
     background-color: #3BA2DA;
 }
+
+.duration input{
+  display: none;
+  cursor: pointer;
+}
+
+.duration label:hover{
+  transform: scale(1.1);
+}
+
+.duration label:active{
+  background-color: #3BA2DA;
+  color: white;
+}
