@@ -52,6 +52,7 @@ function onStart() {
   localStorage.setItem("Status_Business", null)
   localStorage.setItem("business", "Guest")
   localStorage.setItem("user", "Guest")
+  localStorage.setItem("list_pesanan", null)
 }
 
 function storeBusinessLogin() {

@@ -24,7 +24,7 @@
         <div class="nav-icon">
             <a href="#"><img class="notif" src="../../images/notif.png" alt="notifikasi"></a>
             <a href="#"><img class="user" src="../../images/userProfile.png" alt="user-profile"></a>
-            <p>Gilang</p>
+            <p id="username">Gilang</p>
         </div>
     </nav><br>
     <!--Header-->
@@ -46,14 +46,14 @@
             <h3>Pilih durasi pengerjaan</h3>
             <form class="duration" action="">
                 <div class="baris">
-                    <label class="durasi" for="Rp75.000"><input type="radio" name="Score" value="Rp75.000">1 Jam <br>Rp75.000</label>
-                    <label class="durasi" for="Rp150.000"><input type="radio" name="Score" value="Rp150.000">2 Jam <br>Rp150.000</label>
-                    <label class="durasi" for="R225.000"><input type="radio" name="Score" value="Rp225.000">3 Jam <br>Rp225.000</label>
+                    <label class="durasi" for="Rp75.000"><input type="radio" id="one_hour" name="Score" value="Rp75.000">1 Jam <br>Rp75.000</label>
+                    <label class="durasi" for="Rp150.000"><input type="radio" id="two_hour" name="Score" value="Rp150.000">2 Jam <br>Rp150.000</label>
+                    <label class="durasi" for="R225.000"><input type="radio" id="three_hour" name="Score" value="Rp225.000">3 Jam <br>Rp225.000</label>
                 </div>
                 <div class="baris">
-                    <label class="durasi" for="Rp300.000"><input type="radio" name="Score" value="Rp300.000">4 Jam <br>Rp300.000</label>
-                    <label class="durasi" for="Rp375.000"><input type="radio" name="Score" value="Rp375.000">5 Jam <br>Rp375.000</label>
-                    <label class="durasi" for="R425.000"><input type="radio" name="Score" value="Rp425.000">6 Jam <br>Rp425.000</label>
+                    <label class="durasi" for="Rp300.000"><input type="radio" id="four_hour" name="Score" value="Rp300.000">4 Jam <br>Rp300.000</label>
+                    <label class="durasi" for="Rp375.000"><input type="radio" id="five_hour" name="Score" value="Rp375.000">5 Jam <br>Rp375.000</label>
+                    <label class="durasi" for="R425.000"><input type="radio" id="six_hour" name="Score" value="Rp425.000">6 Jam <br>Rp425.000</label>
                 </div>
             </form>
         </div>
@@ -77,9 +77,10 @@
             </div>
         </div>
         <div class="btn">
-            <a href="orderplace.html"><button class="pesan" type="submit" style="cursor: pointer;">Pesan</button></a>
+            <a href="orderplace.html"><button id="submit_button" class="pesan" type="submit" style="cursor: pointer;" onclick="prosesPesanan()">Pesan</button></a>
         </div>
     </div>
+    <script src="../../index_script.js"></script>
 </body>
 
 </html>
