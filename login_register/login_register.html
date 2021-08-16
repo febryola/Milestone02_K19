@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register New Account | Kawanjasa</title>
+    <!-- masukin link css disini -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container signup-container">
+        <!-- Register -->
+        <div class="register-business-container">
+          <form id="register-business">
+            <h2 class="form-title">Register for Service Provider</h2>
+            <p>Fill the blanks below with the proper credentials</p>
+            <label for="new_business_b">Enter company name :</label>
+            <input
+              id="new_business_b"
+              type="text"
+              placeholder="Company Name"
+              value=""
+            />
+            <label for="new_name_b">Enter owner's name :</label>
+            <input
+              id="new_name_b"
+              type="text"
+              placeholder="Owner's Name"
+              value=""
+            />
+            <label for="new_email_b">Enter owner's email :</label>
+            <input
+              id="new_email_b"
+              type="email"
+              placeholder="Your email"
+              value=""
+            />
+            <label for="new_pass_b">Enter your desired password :</label>
+            <input
+              id="new_pass_b"
+              type="password"
+              placeholder="Password"
+              value=""
+            />
+            <label for="new_type_b">Pick your offered services type:</label>
+            <select id="new_type_b" name="Type of Service">
+              <option value="install_service">Instalasi dan Reparasi</option>
+              <option value="cleaning_service">Cleaning Service</option>
+              <option value="laundry_service">Laundry</option>
+              <option value="design_service">Design dan Fotografi</option>
+            </select>
+            <button
+              id="register_button_b"
+              type="submit"
+              value="Register Now!"
+              onclick="storeBusinessLogin()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="register-user-container">
+          <form id="register-user">
+            <h2 class="form-title">Register for Service User</h2>
+            <p>Fill the blanks below with the proper credentials</p>
+            <label for="new_name_u">Enter your name :</label>
+            <input
+              id="new_name_u"
+              type="text"
+              placeholder="Full Name"
+              value=""
+            />
+
+            <label for="new_email_u">Enter your email :</label>
+            <input
+              id="new_email_u"
+              type="email"
+              placeholder="Your email"
+              value=""
+            />
+            <label for="new_pass_u">Enter your desired password :</label>
+            <input
+              id="new_pass_u"
+              type="password"
+              placeholder="Password"
+              value=""
+            />
+            <button
+              id="register_button_u"
+              type="submit"
+              value="Register Now!"
+              onclick="storeUserLogin()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Login -->
+      <div class="form-container login-container">
+        <div class="login-business-container">
+          <form action="../index.html" id="login-business">
+            <h2 class="form-title">Login As Service Owner</h2>
+            <label for="check_email_b">Enter your email :</label>
+            <input
+              id="check_email_b"
+              type="email"
+              placeholder="Your email"
+              value=""
+            />
+            <label for="check_pass_b form-container"
+              >Enter your password :</label
+            >
+            <br />
+            <input
+              id="check_pass_b"
+              type="password"
+              placeholder="Password"
+              value=""
+            />
+            <button
+              id="login_button_b"
+              type="submit"
+              value="Login Now!"
+              onclick="checkBusinessLogin()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="login-user-container">
+          <form action="../index.html" id="login-user">
+            <h2 class="form-title">Login As Service User</h2>
+            <label for="check_email_u">Enter your email :</label>
+            <input
+              id="check_email_u"
+              type="email"
+              placeholder="Your email"
+              value=""
+            />
+
+            <label for="check_pass_u">Enter your password :</label>
+            <input
+              id="check_pass_u"
+              type="password"
+              placeholder="Password"
+              value=""
+            />
+            <button
+              id="login_button_u"
+              type="submit"
+              value="Login Now!"
+              onclick="checkUserLogin()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1 class="overlay-title">Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-left">
+            <h1 class="overlay-title">Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

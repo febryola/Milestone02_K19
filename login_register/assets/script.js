@@ -48,7 +48,10 @@ function onStart() {
 
     alert("Initial Data Loaded Successfully");
   }
-  alert("Page Loaded Successfully");
+  localStorage.setItem("Status_User", null)
+  localStorage.setItem("Status_Business", null)
+  localStorage.setItem("business", null)
+  localStorage.setItem("user", null)
 }
 
 function storeBusinessLogin() {
@@ -124,6 +127,8 @@ function checkBusinessLogin() {
   }
   if (position < 0) {
     alert("Data anda belum terdaftar atau credentials anda salah!");
+    alert("Anda masih bisa mengakses website, namun anda butuh login di page sebelumnya untuk mengonfirmasi pesanan anda")
+    localStorage.setItem("Status_Business", "Incorrect")
   } else if (credentials_toko[position]["pass_toko"] == check_pass.value) {
     alert(
       "Anda berhasil login. Selamat datang " +
@@ -131,8 +136,11 @@ function checkBusinessLogin() {
     );
     current_business = credentials_toko[position]["nama_pemilik"];
     localStorage.setItem("business", current_business);
+    localStorage.setItem("Status_Business", "Confirmed")
   } else {
     alert("Credentials anda salah!");
+    alert("Anda masih bisa mengakses website, namun anda butuh login di page sebelumnya untuk mengonfirmasi pesanan anda")
+    localStorage.setItem("Status_Business", "Incorrect")
   }
 }
 
@@ -148,6 +156,8 @@ function checkUserLogin() {
   }
   if (position < 0) {
     alert("Data anda belum terdaftar atau credentials anda salah!");
+    alert("Anda masih bisa mengakses website, namun anda butuh login di page sebelumnya untuk mengonfirmasi pesanan anda")
+    localStorage.setItem("Status_User", "Incorrect")
   } else if (credentials_user[position]["pass_user"] == check_pass.value) {
     alert(
       "Anda berhasil login. Selamat datang " +
@@ -155,8 +165,11 @@ function checkUserLogin() {
     );
     current_user = credentials_user[position]["nama_user"];
     localStorage.setItem("user", current_user);
+    localStorage.setItem("Status_User", "Confirmed")
   } else {
-    alert("Credentials anda salah!");
+    alert("Data anda belum terdaftar atau credentials anda salah!");
+    alert("Anda masih bisa mengakses website, namun anda butuh login di page sebelumnya untuk mengonfirmasi pesanan anda")
+    localStorage.setItem("Status_User", "Incorrect")
   }
 }
 
