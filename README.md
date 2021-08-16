@@ -1,5 +1,9 @@
 # Milestone02_K19
 
+## Link Website secara umum
+Berikut Link dari website yang dapat diakses dengan mudah dengan menggunakan tautan berikut ini:
+https://milestone02kelompok19.netlify.app/src/login_register/login_register.html
+
 ## Keterangan:
 Website yang dibuat untuk menyelesaikan masalah yang dialami dari UMKM Sektor Jasa di Masa Pandemi Covid-19 dengan membawa solusi untuk menghubungkan penyedia jasa dan pencari jasa yang dapat membantu pemasaran produk dari UMKM penyedia jasa itu sendiri.
 
