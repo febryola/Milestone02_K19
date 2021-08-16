@@ -204,27 +204,6 @@ input{
     margin-left: 54px;
 }
 
-input[type="radio"].opt1:hover + div,
-input[type="radio"].opt2:hover + div,
-input[type="radio"].opt3:hover + div,
-input[type="radio"].opt4:hover + div,
-input[type="radio"].opt5:hover + div,
-input[type="radio"].opt6:hover + div {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
-input[type="radio"].opt1:checked + div,
-input[type="radio"].opt2:checked + div,
-input[type="radio"].opt3:checked + div,
-input[type="radio"].opt4:checked + div,
-input[type="radio"].opt5:checked + div,
-input[type="radio"].opt6:checked + div {
-    background:#3BA2DA;
-    color: white;
-    transition: 0.2s;
-}
-
 /* box-4 */
 .main .box-4{
     border: 1px solid #4798CE;
@@ -270,6 +249,14 @@ input[type="radio"].opt6:checked + div {
   cursor: pointer;
 }
 
+.duration label:hover{
+  transform: scale(1.1);
+}
+
+.duration label:active{
+  background-color: #3BA2DA;
+  color: white;
+}
 
 /* Responsive Web */
 @media screen and (max-width: 768px) {
@@ -311,8 +298,8 @@ input[type="radio"].opt6:checked + div {
     height: 60px;
   }
   form.search input[type="text"] {
-    width: 36vw;
-    margin-left: 24px;
+    width: 32vw;
+    margin-left: 30px;
   }
   .main{
     margin-top: 10px;
@@ -350,11 +337,7 @@ input[type="radio"].opt6:checked + div {
     padding: 6px;
   }
   .btn{
-    display: flex;
     width: 300px;
-    margin: auto;
-    justify-content: flex-end;
-    margin-top: 15px;
     margin-right: 50px ;
   }
 }
