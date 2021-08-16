@@ -50,8 +50,8 @@ function onStart() {
   }
   localStorage.setItem("Status_User", null)
   localStorage.setItem("Status_Business", null)
-  localStorage.setItem("business", null)
-  localStorage.setItem("user", null)
+  localStorage.setItem("business", "Guest")
+  localStorage.setItem("user", "Guest")
 }
 
 function storeBusinessLogin() {
