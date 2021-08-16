@@ -24,6 +24,11 @@ const credentials_user = (() => {
   return fieldValue === null ? [] : JSON.parse(fieldValue);
 })();
 
+const listPesanan = (() => {
+  const fieldValue = localStorage.getItem("list_pesanan");
+  return fieldValue === null ? [] : JSON.parse(fieldValue);
+})();
+
 var current_user = "";
 var current_business = "";
 
@@ -41,6 +46,12 @@ function onStart() {
       email_user: "bersamamu.gilang@gmail.com",
       pass_user: "sukaYola",
     });
+    pesanan.push({
+      nama: "Gilang",
+      durasi: "2 Jam",
+      tanggal: "Minggu, 1 Agustus 2021",
+      pukul: "15.00",
+    });
     localStorage.setItem("data_toko", JSON.stringify(credentials_toko));
     localStorage.setItem("data_user", JSON.stringify(credentials_user));
     localStorage.setItem("user", JSON.stringify(current_user));
@@ -52,7 +63,6 @@ function onStart() {
   localStorage.setItem("Status_Business", null)
   localStorage.setItem("business", "Guest")
   localStorage.setItem("user", "Guest")
-  localStorage.setItem("list_pesanan", null)
 }
 
 function storeBusinessLogin() {

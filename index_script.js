@@ -5,14 +5,8 @@ document.getElementById("username").innerHTML = fullname
 
 status = localStorage.getItem("Status_User")
 
-const listPesanan = (() => {
-    const fieldValue = localStorage.getItem("list_pesanan");
-    return fieldValue === null ? [] : JSON.parse(fieldValue);
-  })();
-
 function prosesPesanan() {
     var durasi = null;
-    alert(document.getElementById("one_hour").checked)
     if (document.getElementById("one_hour").checked == true) {
         durasi = "1 Jam";
     } else if (document.getElementById("two_hour").checked == true) {
