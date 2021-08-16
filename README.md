@@ -34,3 +34,15 @@ Website yang dibuat untuk menyelesaikan masalah yang dialami dari UMKM Sektor Ja
 1. Melakukan sign-up atau login jika sudah memiliki akun.
 2. Setelah itu jika login dengan menggunakan akun penyedia jasa, setelah login langsung akan terarah ke laman yang menampilkan order yang diterima.
 3. Di page ini penyedia jasa bisa menerima order untuk melanjutkan pesanan atau menolaknya.
+
+## Username & Password Default Untuk Website KawanJasa
+1. Jika login sebagai Penyedia Jasa, gunakan username & password berikut:
+    email : mencintaiSPARTA@gmail.com
+    pass  : bersamaKawanjasa
+   
+2. Jika login sebagai Pengguna Jasa, gunakan username & password berikut:
+    email : bersamamu.gilang@gmail.com
+    pass  : sukaYola
+    
+## Keterangan Tambahan 
+Semua file untuk source code yang diperlukan ada pada folder src, alur pertama adalah menjalankan file login_register yang terdapat pada folder login_register pada folder src, setelah itu semua page akan terhubung dan website dapat dijalankan
