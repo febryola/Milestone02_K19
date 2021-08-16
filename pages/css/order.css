@@ -166,6 +166,32 @@ header div h2{
     margin-left: 33px;
 }
 
+.duration input{
+  display: none;
+  cursor: pointer;
+}
+
+input[type="radio"].opt1:hover + div,
+input[type="radio"].opt2:hover + div,
+input[type="radio"].opt3:hover + div,
+input[type="radio"].opt4:hover + div,
+input[type="radio"].opt5:hover + div,
+input[type="radio"].opt6:hover + div {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+input[type="radio"].opt1:checked + div,
+input[type="radio"].opt2:checked + div,
+input[type="radio"].opt3:checked + div,
+input[type="radio"].opt4:checked + div,
+input[type="radio"].opt5:checked + div,
+input[type="radio"].opt6:checked + div {
+    background:#3BA2DA;
+    color: white;
+    transition: 0.2s;
+}
+
 /* box-3 */
 .main .box-3{
     border: 1px solid #4798CE;
@@ -242,20 +268,6 @@ input{
     font-size: 18px;
     background: transparent;
     background-color: #3BA2DA;
-}
-
-.duration input{
-  display: none;
-  cursor: pointer;
-}
-
-.duration label:hover{
-  transform: scale(1.1);
-}
-
-.duration label:active{
-  background-color: #3BA2DA;
-  color: white;
 }
 
 /* Responsive Web */
