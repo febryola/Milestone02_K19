@@ -1,3 +1,5 @@
+/* NavBar */
+
 nav {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -106,6 +108,10 @@ form.search {
 }
 
 /* MAIN */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 .ceklis {
     margin-top:4em; 
     align-items: center; 
