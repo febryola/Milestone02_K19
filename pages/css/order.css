@@ -6,99 +6,99 @@ body{
 
 /* navigation panel*/
 nav {
-    position: fixed;
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    box-shadow: 0px 2px 6px grey;
-    margin: -8px;
-    padding: 4px 0 4px 0;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .merk {
-    width: 22vw;
-  }
-  
-  .logo {
-    margin-left: 4vw;
-    width: 15vw;
-  }
-  
-  .name {
-    width: 12vw;
-  }
-  
-  form .search{
-    margin: 0 0 0 4vw;
-    padding: 0;
-    border: none;
-  }
-  
-  /* search field */
-  form.search input[type="text"] {
-    padding: 8px;
-    font-size: 17px;
-    border: 1px solid #2196f3;
-    float: left;
-    width: 50vw;
-    background: white;
-    border-radius: 8px 0 0 8px;
-  }
-  
-  /* submit button */
-  form.search button {
-    float: left;
-    width: 40px;
-    padding: 8px;
-    background: #2196f3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 0 8px 8px 0;
-  }
-  
-  form.search button:hover {
-    background: #0b7dda;
-  }
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  form.search {
-    width: 60%;
-  }
-  
-  .search-btn {
-    width: 20px;
-  }
-  
-  .nav-icon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .notif {
-    width: 3vw;
-  }
-  
-  .user {
-    width: 3vw;
-  }
-  
-  nav div p {
-    margin: 0 5vw 0 1vw;
-    font-size: 2.5vh;
-  }
+  position: fixed;
+  width: 100vw;
+  height: 9vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  box-shadow: 0px 2px 6px grey;
+  margin: -8px;
+  padding: 4px 0 4px 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.merk {
+  width: 22vw;
+}
+
+.logo {
+  margin-left: 4vw;
+  width: 4vw;
+}
+
+.name {
+  width: 12vw;
+}
+
+form {
+  margin: 0 0 0 4vw;
+  padding: 0;
+  border: none;
+}
+
+/* search field */
+form.search input[type="text"] {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid #2196f3;
+  float: left;
+  width: 46.8vw;
+  background: white;
+  border-radius: 8px 0 0 8px;
+}
+
+/* submit button */
+form.search button {
+  float: left;
+  width: 40px;
+  padding: 8px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.search {
+  width: 60%;
+}
+
+.search-btn {
+  width: 20px;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notif {
+  width: 4vw;
+}
+
+.user {
+  width: 4vw;
+}
+
+nav div p {
+  margin: 0 5vw 0 1vw;
+  font-size: 2.5vh;
+}
 
 /* --------------------- chevron left + service title ------------------ */
 
@@ -256,4 +256,92 @@ input{
 .duration label:active{
   background-color: #3BA2DA;
   color: white;
+}
+
+/* Responsive Web */
+@media screen and (max-width: 768px) {
+  nav {
+    height: 60px;
+  }
+  .name {
+    display: none;
+  }
+  .logo {
+    width: 60px;
+    margin-left: 1vw;
+  }
+  .merk {
+    width: 8vw;
+    margin: 0;
+  }
+  nav div p {
+    display: none;
+  }
+  .notif {
+    width: 40px;
+  }
+  .user {
+    width: 40px;
+    margin-right: 4vw;
+  }
+  .usr-img {
+    height: 7vw;
+    margin-top: 15px;
+  }
+  .btn{
+    margin-right: 80px ;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav {
+    height: 60px;
+  }
+  form.search input[type="text"] {
+    width: 36vw;
+    margin-left: 24px;
+  }
+  .main{
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .main .box-1{
+    width: 285px;
+  }
+  .main .box-2{
+    width: 300px;
+  }
+  .durasi{
+    border: 1px solid #3BA2DA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .main .box-3{
+    width: 300px;
+  }
+  .main .box-4{
+    width: 300px;
+  }
+  .main .box-4 h3{
+    margin-left: 33px;
+  }
+  #form3{
+    width: 78%;
+    margin-bottom: 19px;
+    margin-left: 33px;
+    padding: 6px;
+  }
+  .btn{
+    display: flex;
+    width: 300px;
+    margin: auto;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 50px ;
+  }
 }
