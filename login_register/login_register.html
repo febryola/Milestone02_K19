@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <img class="loader-icon" src="../images/logo-icon-kawanjasa.png" alt="" />
+      <img class="loader-blob" src="../images/blob.png" alt="" />
+    </div>
     <div class="container" id="container">
       <div class="form-container signup-container">
         <!-- Register -->
@@ -180,5 +184,11 @@
     </div>
 
     <script src="assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
   </body>
 </html>
